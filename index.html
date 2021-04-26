@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            padding-left: 220px;
+            color: #0000FF;
+        }
+        table,th , td{
+            border: 1px solid black;  
+            border-collapse: collapse; 
+            text-align: center;
+        } 
+        table{
+            width: 600px;
+            height: 200px;
+            
+        }
+        .content{
+            width: 1200px;
+            padding: 20px 300px;
+        }
+        .menu{
+            color: #0033CC;
+            display: flex;
+            
+        }
+        .menu-Right{
+            position: absolute;
+            right: 370px;
+        }
+       
+        
+        th:nth-child(n+1){
+            background: #FFCC00;
+        }
+        .id th {
+            background: #FFFF33;
+        }
+        .id  th:first-child{
+            background-color: white;
+        }
+        td{
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>THỜI KHÓA BIỂU</h2>
+        <div class="menu">
+            <div class="menu-Left">
+                <p>Lớp: T0908I</p>
+                <p>Giáo viên: KhoaNV</p>
+                <p>Phòng học: class3/Lap3</p>
+            </div>
+            <div class="menu-Right">
+                <p>Thời gian học: 13h30-17h30</p>
+                <p>Ngày học: Thứ 3, 5, 7</p>
+            </div>
+        </div>
+        <table>
+            <tr class="id">
+                <th colspan="3"></th>
+                <th >Thứ 3</th>
+                <th>Thứ 5</th>
+                <th>Thứ 7</th>
+            </tr>
+            <tr>
+                <th>Tuần</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày kết thúc</th>
+                <th colspan="3">Môn học</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>12/04/2021</td>
+                <td>12/06/2021</td>
+                <td>TF-HL-01</td>
+                <td>TK-ML-01</td>
+                <td>TK-Ml-02</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>12/04/2021</td>
+                <td>12/08/2021</td>
+                <td>TF-HL-02</td>
+                <td>TK-ML-02</td>
+                <td>TK-Ml-03</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
